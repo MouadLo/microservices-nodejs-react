@@ -1,12 +1,14 @@
+import PostCreate from './components/PostCreate';
+import PostList from './components/PostList';
+
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a>Learn React</a>
-			</header>
+		<div className="container">
+			<h1>Create post</h1>
+			<PostCreate />
+			<hr />
+			<h1>Posts</h1>
+			<PostList />
 		</div>
 	);
 }
