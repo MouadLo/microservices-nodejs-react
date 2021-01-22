@@ -12,7 +12,7 @@ const CommentList = ({ postId }) => {
 	};
 	useEffect(() => {
 		fetchData();
-	}, []);
+	}, [comments]);
 
 	const renderedComments = comments.map((comment) => {
 		return <li key={comment.id}> {comment.content}</li>;
